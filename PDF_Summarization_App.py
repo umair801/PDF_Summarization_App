@@ -1,4 +1,4 @@
-import streamlit as st
+/import streamlit as st
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader
 from transformers import T5Tokenizer, T5ForConditionalGeneration, pipeline
@@ -8,7 +8,7 @@ import os
 
 
 # Load Model and Tokenizer
-MODEL_DIRECTORY = 'LaMini-Flan-T5-248M'
+MODEL_DIRECTORY = 'model/LaMini-Flan-T5-248M'
 tokenizer = T5Tokenizer.from_pretrained(MODEL_DIRECTORY)
 model = T5ForConditionalGeneration.from_pretrained(
     MODEL_DIRECTORY, device_map='auto', torch_dtype=torch.float32

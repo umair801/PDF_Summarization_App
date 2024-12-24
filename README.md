@@ -26,3 +26,6 @@ This is a powerful and user-friendly web application for summarizing PDF files u
 1. Clone the repository:
    ```bash
    git clone https://github.com/umair801/PDF_Summarization_App.git
+
+## Model Information
+This application uses the LaMini-Flan-T5-248M model for summarization. The model is available for free on Huggingface: https://huggingface.co/MBZUAI/LaMini-Flan-T5-248M. If it has not been downloaded, you can manually download it from the link above and place it in the models/LaMini-Flan-T5-248M directory within the project folder. The model does not require an API key to use.
